@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         a = 0;
                     }
-                }, 300);
+                }, 500);//为了和scrollChange错开
 
             }
 
