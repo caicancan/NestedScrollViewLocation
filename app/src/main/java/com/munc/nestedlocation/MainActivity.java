@@ -1,5 +1,6 @@
 package com.munc.nestedlocation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.AppBarLayout;
@@ -37,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
     TextView tv5;
     @BindView(R.id.tv6)
     TextView tv6;
-    private String[] tab = {"便民生活", "财富管理", "资金往来", "购物娱乐", "教育公益", "其他服务"};
+    @BindView(R.id.tv7)
+    TextView tv7;
+    private String[] tab = {"便民生活", "财富管理", "资金往来", "购物娱乐", "教育公益", "同城交友","其他服务"};
     private int totalDy;
     private int i1;
     private int a = 0;
@@ -111,8 +114,10 @@ public class MainActivity extends AppCompatActivity {
                         mTabLayout.setScrollPosition(0, 3, true);
                     } else if (scrollY >=  getChildHeight(4) && scrollY <  getChildHeight(5)) {
                         mTabLayout.setScrollPosition(0, 4, true);
-                    } else {
+                    } else if(scrollY >=  getChildHeight(5) && scrollY <  getChildHeight(6)){
                         mTabLayout.setScrollPosition(0, 5, true);
+                    }else{
+                        mTabLayout.setScrollPosition(0, 6, true);
                     }
                 }
             }
@@ -134,6 +139,8 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.tv_header)
     public void onViewClicked() {
+        Intent intent = new Intent(this, NestScrlooViewActivity.class);
+        startActivity(intent);
         Toast.makeText(this,"头部",Toast.LENGTH_LONG);
     }
 }

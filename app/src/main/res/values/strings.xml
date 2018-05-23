@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NestedScrollViewLocation</string>
+    <string name="title_activity_nest_scrloo_view">NestScrlooViewActivity</string>
 </resources>

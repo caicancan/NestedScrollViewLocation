@@ -19,6 +19,7 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <TextView
+                android:clickable="true"
                 android:id="@+id/tv_header"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -99,6 +100,13 @@
                 android:background="@color/gray"
                 android:gravity="center"
                 android:text="定位6" />
+           <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="定位7" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

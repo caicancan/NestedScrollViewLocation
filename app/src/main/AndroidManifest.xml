@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".NestScrlooViewActivity"
+            android:label="@string/title_activity_nest_scrloo_view"
+            android:theme="@style/Base.Theme.Design"></activity>
     </application>
 
 </manifest>
