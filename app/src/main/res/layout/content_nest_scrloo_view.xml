@@ -8,6 +8,7 @@
     tools:context=".NestScrlooViewActivity"
     tools:showIn="@layout/activity_nest_scrloo_view">
     <android.support.v4.widget.NestedScrollView
+        android:id="@+id/mnestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:overScrollMode="never"
